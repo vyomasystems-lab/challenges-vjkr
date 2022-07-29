@@ -36,3 +36,22 @@ assign seq_seen = current_state == SEQ_1011 ? 1: 0;
 Tried with various await values and rising/falling clocks. logging next_state value helped in finding the bug.
 ## Is the verification complete ?
 Yes
+
+# SEQUENCE DETECTOR Design Verification
+The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
+![image](https://user-images.githubusercontent.com/16399079/181800108-90fad127-f8e5-4d4b-8614-f6cb5d300edd.png)
+The bugs found are for AND, OR and XOR operations
+```
+AssertionError: Value mismatch DUT = 0x1fffffffe does not match MODEL = 0x1
+```
+The design update should be
+```
+model_bitmanip.py didnot have IF cases for AND, OR and XOR operations
+appending valid bit was not possible
+```
+## Verification Strategy
+verification took time because, model.py file was assumed to be perfect. 
+After finding the bugs in model.py, manual results and results from model.py match. But DUT results are not matching.
+Also could not work through providing valdation bit on the results.
+## Is the verification complete ?
+NO
