@@ -37,7 +37,7 @@ Tried with various await values and rising/falling clocks. logging next_state va
 ## Is the verification complete ?
 Yes
 
-# SEQUENCE DETECTOR Design Verification
+# BITMANIP Processor Design Verification
 The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
 ![image](https://user-images.githubusercontent.com/16399079/181800108-90fad127-f8e5-4d4b-8614-f6cb5d300edd.png)
 The bugs found are for AND, OR and XOR operations
