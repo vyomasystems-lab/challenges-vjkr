@@ -80,4 +80,4 @@ The observed pattern is when input number has last bits 01 or 10, error is seen.
 YES
 
 
-:) :-) 
+:thumbsup:
