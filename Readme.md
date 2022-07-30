@@ -79,5 +79,19 @@ The observed pattern is when input number has last bits 01 or 10, error is seen.
 ## Is the verification complete ?
 YES
 
+Acknowledgement
+Thanks to everyone involved in the
+hackathon directly and passively. Special thanks to
+Mr.Kunal Ghosh and Lavanya Maam for their knowledge sharing and
+motivation. Thanks to all the TAs, with specail mention to SUMANTO KAR
+ and Raffaele Signoriello. 
+ . Thanks to Yan Zi
+Xuan for making the code open source.
 
-:thumbsup:
+References
+[1] https://opencores.org/projects/mod3_calc
+[2] www.gnu.org/licenses/why-not-lgpl.en.html
+[3] https://www.edaplayground.com/home
+[4] https://nielithackathon.in/
+
+![image](https://user-images.githubusercontent.com/16399079/181872800-75aa669a-750e-47a1-8c6c-a530fbc1289b.png)
