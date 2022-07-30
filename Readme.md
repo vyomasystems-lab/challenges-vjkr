@@ -55,3 +55,29 @@ After finding the bugs in model.py, manual results and results from model.py mat
 Also could not work through providing valdation bit on the results.
 ## Is the verification complete ?
 NO
+
+# Mod 3 Calculator Design Verification
+![image](https://user-images.githubusercontent.com/16399079/181872182-fd49f6c6-383c-464c-b0a7-5e8f126e4b65.png)
+The bug inserted and found is
+```
+AssertionError: Randomised test failed with: input82 = reminder0
+AssertionError: Randomised test failed with: input201 = reminder1
+AssertionError: Randomised test failed with: input113 = reminder0
+AssertionError: Randomised test failed with: input97 = reminder2
+AssertionError: Randomised test failed with: input1 = reminder2 <--------- This error is helpful in verification strategy
+```
+The design update should be
+```
+type_conv TC0(
+     .plus_one(dat_i[1]), ---------> .plus_one(dat_i[0]),
+     .minus_one(dat_i[0]), ----------> .minus_one(dat_i[1]),
+```
+## Verification Strategy
+Fourth error is obtained for small number, hence manual tracing of operations on last 2 bits helps find the error!
+The observed pattern is when input number has last bits 01 or 10, error is seen. No error if 00 or 11
+
+## Is the verification complete ?
+YES
+
+
+:) :-) 
